@@ -1,10 +1,12 @@
+import { displayWeather } from "./display";
+
 export default function cuLocation(){
     console.log("current location");
     navigator.geolocation.getCurrentPosition(showPosition);
 }
 let longitude = 0;
 let latitude = 0;
-let apiKey = '02cd7df6f57621292521348f6a56ec7c'
+let apiKey = '124037468d5fc4cf222e0fd1436d41b3';
 function showPosition(position){
      longitude = position.coords.longitude;
      latitude = position.coords.latitude;
@@ -19,6 +21,6 @@ function showPosition(position){
       return response.json();
     })
     .then(function(response) {
-      console.log(response);
+      displayWeather(response);
     });
   }

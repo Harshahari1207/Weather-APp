@@ -31,7 +31,7 @@ body{
     height: 100vh;
     background-color: aquamarine;
     display: grid;
-    grid-template: 1fr 4fr .5fr/ 2fr 4fr;
+    grid-template: .75fr 4fr .5fr/ 1fr 4fr;
 
 }
 .nav{
@@ -46,6 +46,7 @@ body{
     grid-column: 1/2;
     display: flex;
     padding: var(--pd);
+    flex-direction: column;
     
 }
 .content{
@@ -59,6 +60,15 @@ body{
 .container{
     width: 100%;
     background-color: var(--primary_color);
+    display: grid;
+    grid-template: 3fr 3fr 3fr/ 3fr 3fr 3fr;
+    gap: var(--gap);
+}
+.container div{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer{
     background-color: var(--secondary_color);
