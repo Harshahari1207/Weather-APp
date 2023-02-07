@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "weatherApp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshahari1207/Weather-App.git"
+  },
+  "keywords": [
+    "Weather",
+    "App"
+  ],
+  "author": "Harsha Hari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harshahari1207/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Harshahari1207/Weather-App#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
