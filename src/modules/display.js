@@ -22,7 +22,7 @@ export function displayWeather(response){
     let sunsetVal = unixToHuman(response.sys.sunset);
     let feelsLikeVal = kelvinToCelcius(response.main.feels_like);
     const dateAndTime = new Date(response.dt * 1000);
-    const dateVal = `${dateAndTime.getFullYear()}-${dateAndTime.getMonth() + 1}-${dateAndTime.getDate()}`;
+    const dateVal = `${dateAndTime.getDate()}-${dateAndTime.getMonth() + 1}-${dateAndTime.getFullYear()}`;
     const timeVal = `${dateAndTime.getHours()}:${dateAndTime.getMinutes()}:${dateAndTime.getSeconds()}`;
     console.log(tempC);
     console.log(sunriseVal);
