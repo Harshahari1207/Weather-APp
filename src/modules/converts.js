@@ -51,10 +51,10 @@ export function windDi(w){
     else return "N"
     }
 
-export function convertUTCToLocalTime(utcTime) {
-        // Get the time zone offset for the country
-        let timeZoneOffset = -Intl.DateTimeFormat().resolvedOptions().timeZone.split('/')[1];
-        // Calculate the local time by adding the time zone offset to the UTC time
-        let localTime = new Date(utcTime.getTime() + (timeZoneOffset * 60 * 60 * 1000));
-        return localTime;
-      }
+// export function convertUTCToLocalTime(utcTime) {
+//         // Get the time zone offset for the country
+//         let timeZoneOffset = -Intl.DateTimeFormat().resolvedOptions().timeZone.split('/')[1];
+//         // Calculate the local time by adding the time zone offset to the UTC time
+//         let localTime = new Date(utcTime.getTime() + (timeZoneOffset * 60 * 60 * 1000));
+//         return localTime;
+//       }

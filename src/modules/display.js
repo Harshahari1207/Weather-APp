@@ -5,7 +5,7 @@ const cityName = document.querySelector('.cityName');
 const timeZone = document.querySelector('.timeZone');
 const temperature = document.querySelector('.temp');
 const date = document.querySelector('.date');
-const time = document.querySelector('.time');
+// const time = document.querySelector('.time');
 const sunrise = document.querySelector(".sunriseh3");
 const humidity = document.querySelector(".humh3");
 const sunset = document.querySelector(".sunseth3");
@@ -23,7 +23,7 @@ export function displayWeather(response){
     let feelsLikeVal = kelvinToCelcius(response.main.feels_like);
     const dateAndTime = new Date(response.dt * 1000);
     const dateVal = `${dateAndTime.getDate()}-${dateAndTime.getMonth() + 1}-${dateAndTime.getFullYear()}`;
-    const timeVal = `${dateAndTime.getHours()}:${dateAndTime.getMinutes()}:${dateAndTime.getSeconds()}`;
+    // const timeVal = `${dateAndTime.getHours()}:${dateAndTime.getMinutes()}:${dateAndTime.getSeconds()}`;
     console.log(tempC);
     console.log(sunriseVal);
     console.log(sunsetVal);
@@ -40,7 +40,7 @@ export function displayWeather(response){
     // console.log(convertUTCToLocalTime(timeZoneVal));
     timeZone.textContent = timeZoneVal;
     date.textContent = dateVal;
-    time.textContent = timeVal;
+    // time.textContent = timeVal;
     temperature.textContent = tempC + "°C";
     sunrise.textContent = sunriseVal;
     sunset.textContent = sunsetVal;

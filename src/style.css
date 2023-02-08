@@ -5,6 +5,8 @@
 
     --primary_color: #0D4C92;
     --secondary_color: #59C1BD;
+    --first: #A0E4CB;
+    --second: #CFF5E7;
 
     --pd: 5px;
     --br: 5px;
@@ -17,6 +19,12 @@ button{
     border: 0;
     border-radius: var(--br);
     padding: var(--pd);
+    background-color: var(--second);
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: var(--first);
 }
 input{
     border: 0;
@@ -72,7 +80,7 @@ body{
     opacity: .8;
     font-weight: bold;
     color: var(--secondary_color);
-    padding: calc(var(--pd)*5);
+    padding: calc(var(--pd)*7);
 }
 .left, .right{
     display: flex;
@@ -82,7 +90,9 @@ body{
     opacity: 1;
 
 }
-
+.left h1{
+    font-size: 6rem;
+}
 .footer{
     background-color: var(--secondary_color);
     
