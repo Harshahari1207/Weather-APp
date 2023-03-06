@@ -9,7 +9,8 @@ export function fetchData(){
     })
     .then(function(response) {
       displayWeather(response);
-    });
+    })
+    .catch(err => alert(err))
     
     
   }

@@ -22,5 +22,6 @@ function showPosition(position){
     })
     .then(function(response) {
       displayWeather(response);
-    });
+    })
+    .catch(err => alert(err))
   }
